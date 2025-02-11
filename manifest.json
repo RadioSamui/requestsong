@@ -1,0 +1,21 @@
+{
+  "name": "Radio Samui Request",
+  "short_name": "RadioRequest",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FFD700",
+  "description": "Request songs easily for Radio Samui Online!",
+  "icons": [
+    {
+      "src": "https://radiosamui.online/assets/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://radiosamui.online/assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
