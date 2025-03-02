@@ -34,8 +34,8 @@ function HTTPGet($url) {
 }
 
 // Получаем данные из формы
-$artist = isset($_POST['artist']) ? trim($_POST['artist']) : '';
-$title = isset($_POST['title']) ? trim($_POST['title']) : '';
+$artist = isset($_POST['artist']) ? mb_strtolower(trim($_POST['artist'])) : '';
+$title = isset($_POST['title']) ? mb_strtolower(trim($_POST['title'])) : '';
 
 if ($artist === '' && $title === '') {
     die(json_encode(["error" => "Please enter an artist or song title."]));
