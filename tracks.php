@@ -60,7 +60,7 @@ $cache_data = [
     "tracks" => $tracks
 ];
 
-if (!file_put_contents($cache_file, json_encode($cache_data, JSON_PRETTY_PRINT), LOCK_EX)) {
+if (!file_put_contents($cache_file, json_encode($cache_data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT), LOCK_EX)) {
     die(json_encode(["error" => "❌ Ошибка: Не удалось записать кеш ($cache_file). Проверьте `chmod 777 cache`."]));
 }
 
